@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .flexbox{
+            margin: 350px;
+        }
+        .rotating {
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            background-color: blue;
+            animation: rotating 2s infinite ease-in-out;
+        }
+
+        @keyframes rotating {
+            0% {
+                transform: perspective(140px) rotateX(0deg) rotateY(0deg);
+            }
+
+            50% {
+                transform: perspective(140px) rotateX(-180deg) rotateY(0deg);
+            }
+
+            100% {
+                transform: perspective(140px) rotateX(-180deg) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1>CTVEREC</h1>
+    <div class="flexbox">
+        <div class="container">
+            <div class="rotating">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

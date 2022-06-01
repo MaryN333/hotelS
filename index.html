@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidyakina hotel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+
+
+    <section id="showcase" class="d-flex justify-content-center align-items-center">
+        <div id="overlay"></div>
+        <div id="header" class="container text-white text-center">
+            <h3 class="mb-0">modern hotel</h3>
+            <h1 class="display-1" id="sunshine">sunshine</h1>
+            <p class="lead d-none d-md-block">Vitame Vas v nasem hotelu.</p>
+            <h2>Rezervacni formular</h2>
+            <div class="container d-flex justify-content-left align-items-center">
+                <form class="text-left">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Jmeno, prijmeni</label>
+                        <input type="text" class="form-control" id="name" placeholder="Petra Petrova">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="johndoe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel" class="form-label">Telefonni cislo</label>
+                        <input type="text" class="form-control" id="tel" placeholder="+420 777 777 777">
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Pocet osob</label>
+                        <select id="number" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Typ pokoju</label>
+                        <select id="number" class="form-control">
+                            <option value="1">jednoluzkovy</option>
+                            <option value="2">dvouluzkovy2</option>
+                            <option value="3">triluzkovy</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="inputDate">Zadejte datum, od:</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="inputDate">do:</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex justify-content-around align-items-center" style="height: 100px;">
+                <button id="book" class="btn btn-lg btn-primary px-5">REZERVUJ</button>
+                <button id="book" class="btn btn-lg btn-primary px-5 d-none d-md-block" data-toggle="modal"
+                    data-target="#booking">VIRTUALNI PROHLIDKA</button>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-brightness-alt-high-fill"></i>
+            Sunshine</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#history">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ctverec.html">Icon</a>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <input type="search" class="form-control">
+                <button class="btn btn-outline-success ml-2" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="history">
+        <div class="container text-center mt-5">
+
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <h3>Historie hotelu</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem impedit
+                        praesentium et tenetur, quos, saepe ipsam numquam ducimus, quas earum rerum. Distinctio eligendi
+                        natus odit.</p>
+                </div>
+
+                <div class="col-md-4 p-3">
+                    <h3>Soucasnost</h3>
+                    <p id="font" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem
+                        impedit praesentium et tenetur, quos, saepe ipsam numquam ducimus, quas earum rerum. Distinctio
+                        eligendi natus odit.</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="images/bazen.jpg" alt="swiming pool" class="img-fluid d-none d-md-inline">
+                </div>
+            </div>
+    </section>
+
+
+    <section id="cards">
+        <div class="container text-center mt-2 ">
+            <h3>NASE SLUZBY. CENIK</h3>
+            <div class="row m-2">
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="card">
+                        <img src="images/winter.png" class="card-img-top" alt="winter">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Ubytovani</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Typ</th>
+                                        <th scope="col">Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1-luzkovy</td>
+                                        <td>1 500 Kc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2-luzkovy</td>
+                                        <td>2 300 Kc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2-luzkovy</td>
+                                        <td>3 000 Kc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                                title="Tooltip here">
+                                Click me </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="card">
+                        <img src="images/winter.png" class="card-img-top" alt="winter">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Wellness</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Typ</th>
+                                        <th scope="col">Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SPA</td>
+                                        <td>1 500 Kc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Masaz 1</td>
+                                        <td>1 000 Kc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sauna</td>
+                                        <td>3 000 Kc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                                title="Tooltip here">
+                                Click me </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="card">
+                        <img src="images/winter.png" class="card-img-top" alt="winter">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Sport</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Typ</th>
+                                        <th scope="col">Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bazen</td>
+                                        <td> 1 500 Kc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tenis</td>
+                                        <td>1 400 Kc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tenis 2</td>
+                                        <td>1 500 Kc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title"
+                                data-content="And here's some amazing content. It's very engaging. Right?">popover</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="card">
+                        <img src="images/winter.png" class="card-img-top" alt="winter">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Internet</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Typ</th>
+                                        <th scope="col">Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1-luzkovy</td>
+                                        <td>1 500 Kc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2-luzkovy</td>
+                                        <td>2 300 Kc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2-luzkovy</td>
+                                        <td>3 000 Kc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title"
+                                data-content="And here's some amazing content. It's very engaging. Right?">popover</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="carousel">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/winter.png" class="d-block w-100" alt="hotel v zime">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Hotel v zime</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/bazen.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Hotel v lete</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/dogs.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacts">
+        <div class="container mt-5">
+            <div class="row" style="height: 400px">
+                <div class="col-md-4 ">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1076.3009104063087!2d14.432148283028125!3d50.08835754117457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b949532216855%3A0xb3a8b9e4c22bcc3!2sMarriott!5e0!3m2!1scs!2scz!4v1654083193699!5m2!1scs!2scz"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!--do md pod sebou, od md budou 3 6 3-->
+                <div class="col-md-4 ">
+                    <h2 class="mt-5">Cocialni site</h2><br>
+                    <i class="bi bi-messenger"></i> facebook <br><br>
+                    <i class="bi bi-twitter"></i> twitter <br><br>
+                    <i class="bi bi-instagram"> #instagram</i>
+                </div>
+                <div class="col-md-4 border-left">
+                    <h2 class="mt-5">Kontakty</h2><br>
+                    <i class="bi bi-mailbox2"></i>
+                    <p>Centralni, 25, Praha, 100 00</p><br>
+                    <i class="bi bi-telephone-inbound"></i>
+                    <p>tel. +420 777 777 777</p><br>
+                    <i class="bi bi-envelope"></i>
+                    <p>hotel@hotel.cz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal" id="booking" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Virtualni prohlidka</h5>
+                    <button class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto vel consectetur quasi itaque
+                        illum adipisci!</p>
+
+                    <video width="170" height="120" controls>
+                        <source src="images/video.mp4" type="video/mp4">
+
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit Request</button>
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
